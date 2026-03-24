@@ -1,4 +1,4 @@
-Yellow Python Little Snake Game | YPL Snake Game 🐍 - Jogo da Cobrinha Píton Amarela - Versão para Linux e Windows
+# Yellow Python Little Snake Game | YPL Snake Game 🐍 - Jogo da Cobrinha Píton Amarela - Versão para Linux e Windows
 
 ## 1. Sobre o jogo
 
