@@ -122,4 +122,3 @@ Encontrou algum bug? Tem sugestão ou melhoria?
 Primavera 🌸 • Verão ☀️ • Outono 🍂 • Noite 🌙 • Inverno ❄️
 
 Boa jogatina! 🚀
-```
