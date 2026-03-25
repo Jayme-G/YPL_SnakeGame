@@ -5,7 +5,8 @@
        alt="Yellow Python Little" width="300"/>
 </p>
 
-# Jogo da Cobrinha Píton Amarela - Versão para Linux e Windows
+# Jogo da Cobrinha Píton Amarela
+## Versão para Linux e Windows
 
 ## 1. Sobre o jogo
 
