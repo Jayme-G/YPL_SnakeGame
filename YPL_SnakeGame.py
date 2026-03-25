@@ -8,6 +8,7 @@ Author = "Copyright (C) 2026 Jayme Gonçalves"
 import pygame
 import random
 import os
+import sys
 
 # Inicializa o Pygame
 pygame.init()
@@ -984,7 +985,7 @@ class Game:
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
                     pygame.quit()
-                    exit()
+                    sys.exit()
                 if event.type == pygame.KEYDOWN:
                     if event.key == pygame.K_RETURN:
                         self.snake.reset()
@@ -1022,13 +1023,13 @@ class Game:
                         return
                     elif event.key == pygame.K_q:
                         pygame.quit()
-                        exit()
+                        sys.exit()
 
     def run(self):
         # Executa o loop principal do jogo.
         if not self.show_menu():
             pygame.quit()
-            exit()
+            sys.exit()
 
         # Ativa invencibilidade temporária ao iniciar o jogo (3 segundos)
         self.temp_inv_active = True
@@ -1039,7 +1040,7 @@ class Game:
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
                     pygame.quit()
-                    exit()
+                    sys.exit()
                 if event.type == pygame.VIDEORESIZE:
                     if not self.is_fullscreen:  # Permite redimensionamento apenas em modo janela
                         self.screen = pygame.display.set_mode((event.w, event.h), pygame.RESIZABLE | pygame.HWSURFACE | pygame.DOUBLEBUF)
@@ -1064,7 +1065,7 @@ class Game:
                         self.activate_power_up_from_inventory(2)
                     elif event.key == pygame.K_q:
                         pygame.quit()
-                        exit()
+                        sys.exit()
 
             if self.transition:
                 self.show_transition()
