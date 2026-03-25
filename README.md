@@ -1,4 +1,11 @@
-# Yellow Python Little Snake Game | YPL Snake Game - Jogo da Cobrinha Píton Amarela - Versão para Linux e Windows
+# Yellow Python Little Snake Game | YPL Snake Game
+
+<p align="center">
+  <img src="https://github.com/Jayme-G/YPL_SnakeGame/blob/main/icon.png?raw=true"
+       alt="Yellow Python Little" width="300"/>
+</p>
+
+# Jogo da Cobrinha Píton Amarela - Versão para Linux e Windows
 
 ## 1. Sobre o jogo
 
