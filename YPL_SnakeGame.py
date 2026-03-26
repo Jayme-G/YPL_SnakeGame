@@ -3,12 +3,15 @@
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
 
 version = "1.0"
+
+The MIT License (MIT)
 Author = "Copyright (C) 2026 Jayme Gonçalves"
 
 import pygame
 import random
 import os
 import sys
+import webbrowser
 
 # Inicializa o Pygame
 pygame.init()
@@ -559,8 +562,9 @@ class Game:
         # Exibe o menu inicial do jogo.
         while True:
             additional_texts = [
-                ("Pressione 'ENTER' para jogar ou 'Q' para sair", 0),
+                ("Pressione 'ENTER' para jogar, 'R' para o repositório do jogo ou 'Q' para sair", 0),
                 (f"Yellow Python Little Snake Game | YPL Snake Game | High Score: {self.high_score}", 0),
+                ("https://github.com/Jayme-G/YPL_SnakeGame", 0),
                 (f"{Author}", 0)
             ]
             self.show_overlay(f"Jogo da Cobrinha Píton Amarela - Versão {version}", alpha=255, additional_texts=additional_texts)
@@ -572,6 +576,15 @@ class Game:
                     if not self.is_fullscreen:  # Permite redimensionamento apenas em modo janela
                         self.screen = pygame.display.set_mode((event.w, event.h), pygame.RESIZABLE | pygame.HWSURFACE | pygame.DOUBLEBUF)
                 if event.type == pygame.KEYDOWN:
+                    if event.key == pygame.K_r:
+                        url = "https://github.com/Jayme-G/YPL_SnakeGame"
+                        try:
+                            webbrowser.open(url, new=2)
+                            self.add_message("Abrindo o link no navegador…")
+                        except Exception as e:
+                            self.add_message(f"Erro ao abrir URL: {e}")
+                        # Depois de abrir o link, continuamos na tela do menu
+                        continue
                     if event.key == pygame.K_F11:
                         self.toggle_fullscreen()
                     elif event.key == pygame.K_RETURN:
