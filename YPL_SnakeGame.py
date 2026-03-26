@@ -4,7 +4,7 @@
 
 version = "1.0"
 
-The MIT License (MIT)
+# The MIT License (MIT)
 Author = "Copyright (C) 2026 Jayme Gonçalves"
 
 import pygame
